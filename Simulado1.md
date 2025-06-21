@@ -663,4 +663,3 @@
     **Explicação:** A **Presença Global** da AWS (suas regiões e *edge locations* distribuídas mundialmente) permite que a corporação hospede seus serviços mais próximos de seus clientes finais, resultando em menor latência e uma melhor experiência de usuário.
 
 ---
-
