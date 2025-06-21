@@ -18,7 +18,7 @@ Standard
 Em resumo, a escolha da classe S3 que pode resultar em custos mais elevados depende do seu padrão de acesso aos dados: Se você acessa os dados frequentemente, o Glacier e o Glacier Deep Archive resultarão em custos muito mais altos devido às taxas de recuperação. As classes Glacier e Glacier Deep Archive têm o maior potencial para custos elevados inesperados devido às taxas de recuperação significativas se os dados forem acessados com mais frequência do que o pretendido para essas classes.
 ```
 
-```markdown
+
 ### Pergunta 2
 Um time de desenvolvimento detectou baixo desempenho em um banco de dados relacional. A concorrência entre um alto volume de consultas e outras operações no banco de dados tem elevado a latência no tráfego de dados.
 Qual é a abordagem mais eficiente e econômica para solucionar esse problema?
@@ -41,7 +41,7 @@ Substituir o RDS pelo Dynamo.
 * **Substituir o RDS pelo DynamoDB:** O DynamoDB é um banco de dados NoSQL e a migração de um banco de dados relacional para NoSQL é uma mudança arquitetural significativa. Ela exigiria uma reengenharia da aplicação, o que é um processo caro, demorado e complexo, e nem sempre a abordagem NoSQL é a mais adequada para todos os tipos de dados e consultas relacionais. Portanto, não é uma solução eficiente nem econômica para o problema imediato de desempenho em um banco de dados relacional existente.
 ```
 
-```markdown
+
 ### Pergunta 3
 Autenticação Multi Fator)?
 Um serviço que permite a conexão entre a máquina do cliente e um servidor na AWS através de um arquivo contendo key pairs (par de chaves).
@@ -61,7 +61,7 @@ Um serviço que utiliza key pairs (par de chaves) na autenticação do usuário 
 * "Um serviço que utiliza key pairs (par de chaves) na autenticação do usuário através da CLI (Linha de Comando)." Embora as chaves de acesso (access keys) — que consistem em um ID de chave de acesso e uma chave de acesso secreta — sejam usadas para autenticar usuários e aplicativos na AWS CLI e via SDKs, essa descrição não aborda a "segunda etapa" da autenticação que a MFA oferece. A MFA pode ser usada com a CLI, mas exige uma configuração adicional para gerar credenciais temporárias.
 ```
 
-```markdown
+
 ### Pergunta 4
 Qual usuário possui acesso a todos os recursos da conta, que é utilizado para acessar o AWS Console pela primeira vez, mas que não é recomendado para uso no dia a dia?
 
@@ -83,7 +83,7 @@ Qual usuário possui acesso a todos os recursos da conta, que é utilizado para 
 * **Use Apenas para Tarefas Específicas e Raras:** O usuário root deve ser usado apenas para tarefas que exigem acesso irrestrito e que não podem ser realizadas por um usuário IAM, como alterar o e-mail da conta, fechar a conta, ou gerenciar algumas configurações de cobrança.
 ```
 
-```markdown
+
 ### Pergunta 5
 Qual é o banco de dados relacional totalmente gerenciado pela AWS e que pode ser 5 x mais rápido que o MySQL?
 MariaDb
@@ -103,7 +103,6 @@ Neptune
 * **Neptune:** O Amazon Neptune é um serviço de banco de dados de grafos, também não relacional. Ele é otimizado para armazenar e consultar dados conectados de forma rápida e eficiente, mas não é um substituto para bancos de dados relacionais como o MySQL ou o Aurora.
 ```
 
-```markdown
 ### Pergunta 6
 AWS Trusted Advisor é um serviço de monitoramento e recomendação que auxilia o cliente a utilizar os recursos de sua conta de maneira alinhada com as melhores práticas para trazer muitos benefícios.
 Quais itens abaixo representam tais benefícios? (Selecione 3 alternativas)
@@ -125,7 +124,7 @@ Proteção de Hardware
 * **Proteção de Hardware** não é um benefício direto do AWS Trusted Advisor. Enquanto a AWS se encarrega da manutenção e proteção da infraestrutura de hardware subjacente (parte da responsabilidade da AWS no Modelo de Responsabilidade Compartilhada), o Trusted Advisor foca nas suas configurações e uso dos serviços, não na proteção física do hardware em si.
 ```
 
-```markdown
+
 ### Pergunta 7
 Uma empresa está migrando parte de sua aplicação para a AWS e precisa de uma solução para armazenar arquivos que utilizam sistemas de arquivos.
 Qual serviço da AWS seria o mais adequado para atender a essa necessidade?
@@ -146,7 +145,7 @@ Elastic File System (EFS)
 * **Key Management Service (AWS KMS)**: É um serviço que facilita a criação e o controle de chaves de criptografia usadas para criptografar seus dados. Ele é crucial para a segurança dos dados, mas não é um serviço de armazenamento de arquivos em si.
 ```
 
-```markdown
+
 ### Pergunta 8
 Quais são os componentes principais do Amazon S3 utilizados para organizar e armazenar dados?
 (Selecione 2 alternativas)
@@ -170,7 +169,7 @@ Funções (Roles)
 * **Funções (Roles):** As Funções (IAM Roles) são uma forma de conceder permissões temporárias para entidades (como usuários, serviços AWS ou instâncias EC2) acessarem recursos da AWS. Elas são essenciais para a segurança e o controle de acesso ao S3, mas não são componentes que armazenam ou organizam os dados *no* S3.
 ```
 
-```markdown
+
 ### Pergunta 9
 Quais dos seguintes são princípios do pilar de confiabilidade no AWS Well-Architected Framework?
 Implementar recuperação automática para falhas.
@@ -195,7 +194,6 @@ Monitorar continuamente o uso de recursos e métricas de desempenho.
 * **Proteger dados em trânsito e em repouso:** Esta é uma prática essencial de **Segurança**, um pilar distinto no Well-Architected Framework. Embora a perda de dados afete a confiabilidade do serviço, a proteção dos dados em si é um tópico fundamentalmente de segurança.
 ```
 
-```markdown
 ### Pergunta 10
 Qual serviço da AWS é recomendado para estimar de forma detalhada e precisa os custos de implementação e operação dos diversos serviços AWS para uma empresa, considerando diferentes cenários de uso, variáveis de configuração e previsões de crescimento?
 AWS Pricing Calculator
@@ -219,7 +217,7 @@ AWS Organizations
 * **AWS Organizations:** O AWS Organizations é um serviço de gerenciamento de contas que ajuda a centralizar e consolidar várias contas AWS em uma única organização. Ele auxilia na gestão de faturamento consolidado e na aplicação de políticas, mas não é uma ferramenta para estimativa de custos de serviços.
 ```
 
-```markdown
+
 ### Pergunta 11
 Uma empresa busca assegurar a segurança das instâncias de uma aplicação que está prestes a ser lançada.
 Qual é o serviço que auxilia na identificação de vulnerabilidades de segurança e riscos de exposição, seguindo as melhores práticas e conformidade com regulamentações?
@@ -244,7 +242,7 @@ AWS KMS
 * **AWS KMS (Key Management Service):** É um serviço que facilita a criação e o controle de chaves de criptografia usadas para criptografar seus dados. É fundamental para a segurança da criptografia, mas não é um serviço de identificação de vulnerabilidades nas aplicações ou infraestrutura.
 ```
 
-```markdown
+
 ### Pergunta 12
 Durante a migração de sistemas, observou-se que há dados em uma aplicação que raramente são acessados e poderiam ser preservados em arquivos apenas para fins de auditoria.
 Qual serviço pode ser empregado para alcançar esse objetivo com o menor custo possível?
@@ -263,7 +261,7 @@ Qual serviço pode ser empregado para alcançar esse objetivo com o menor custo 
 * **Tempo de Recuperação:** Esteja ciente dos tempos de recuperação. Se a auditoria exigir acesso quase instantâneo, você precisaria de uma classe diferente com custos mais altos. Para fins de auditoria, onde os requisitos de tempo geralmente são mais flexíveis, o Glacier Deep Archive é uma excelente opção de custo-benefício.
 ```
 
-```markdown
+
 ### Pergunta 13
 Qual é o serviço de banco de dados em grafo gerenciado pela AWS que possibilita diversos tipos de relacionamentos entre seus nós e pode ser aplicado em diversos contextos, representando conexões presentes em situações cotidianas, como em redes sociais, cadeias logísticas, ambientes empresariais, entre outros?
 Amazon Graph
@@ -288,7 +286,6 @@ Amazon Neo4j
 * **Amazon Neo4j:** Neo4j é outro banco de dados de grafo popular. Similar ao JanusGraph, você pode executá-lo na AWS, mas não é um serviço *gerenciado nativamente* pela AWS como o Neptune. A AWS não oferece um serviço "Amazon Neo4j".
 ```
 
-```markdown
 ### Pergunta 14
 Um sistema externo gera arquivos em um formato incompatível com o seu sistema.
 Qual serviço da AWS pode ser utilizado para realizar a transformação desses arquivos e integrá-los ao seu ambiente de forma eficiente?
@@ -313,7 +310,6 @@ AWS DMS
 * **AWS DMS (Database Migration Service):** Como mencionado acima, o DMS é para migração de bancos de dados, não para transformação de formatos de arquivo de sistemas externos para integração geral.
 ```
 
-```markdown
 ### Pergunta 15
 Qual serviço da AWS possui um catálogo onde os clientes podem encontrar aplicações desenvolvidas por terceiros, prontas para serem instaladas e executadas para atender as mais diversas necessidades de negócio?
 AWS Marketplace
@@ -337,7 +333,7 @@ AWS OpsWorks
 * **AWS OpsWorks:** O AWS OpsWorks é um serviço de gerenciamento de configuração que ajuda a automatizar a configuração, implantação e gerenciamento de servidores e aplicações usando Chef e Puppet. Ele é uma ferramenta para gerenciar a infraestrutura e o ciclo de vida das aplicações, mas não um catálogo de software de terceiros.
 ```
 
-```markdown
+
 ### Pergunta 16
 Uma organização almeja padronizar o processo de criação e configuração de todos os bancos de dados em sua infraestrutura por meio de código, permitindo a implementação automática através de pipelines de CI/CD.
 Qual serviço seria a recomendação para atender a esse propósito?
@@ -362,7 +358,6 @@ AWS CloudFormation
 * **AWS CodePipeline:** O AWS CodePipeline é um serviço de CI/CD totalmente gerenciado que automatiza os estágios de lançamento de software. Ele orquestra o pipeline (construção, teste, implantação), mas **não é a ferramenta que define a infraestrutura como código**. Ele seria usado *em conjunto* com o CloudFormation, executando os templates do CloudFormation como parte da etapa de implantação.
 ```
 
-```markdown
 ### Pergunta 17
 Quais das seguintes opções são métodos de pagamento disponíveis para instâncias EC2?
 (Selecione 3 alternativas)
@@ -388,7 +383,6 @@ Spot
 * **Tailor Made (Sob medida):** Esta não é uma categoria de pagamento reconhecida ou oficial para instâncias EC2. Embora você possa adaptar sua configuração de EC2 às suas necessidades, o termo não se refere a um modelo de precificação.
 ```
 
-```markdown
 ### Pergunta 18
 Ao utilizar os serviços da AWS, qual é a sequência típica esperada em uma pipeline de CI/CD?
 CodeCommit, CodeBuild, CodeDeploy.
@@ -406,7 +400,6 @@ CodeBuild, CodeCommit, CodeDeploy.
     3.  **AWS CodeDeploy (Implantação):** Finalmente, o CodeDeploy é responsável pela implantação dos artefatos construídos. É um serviço que automatiza as implantações de código em uma variedade de instâncias de computação, incluindo instâncias EC2, servidores on-premises, funções AWS Lambda e Amazon ECS. Sua função na pipeline é: O CodeDeploy pega o artefato gerado pelo CodeBuild e o implanta nos ambientes de destino (desenvolvimento, teste, produção), garantindo que a nova versão da aplicação esteja em execução.
 ```
 
-```markdown
 ### Pergunta 19
 Para garantir elasticidade e economia no uso do EC2, mantendo os arquivos de programas e sistemas em um armazenamento persistente e escalável, que pode ser anexado e desanexado de instâncias conforme necessário, qual serviço da AWS deve ser utilizado?
 S3
@@ -431,7 +424,6 @@ EBS
 * **CodeCommit:** O AWS CodeCommit é um serviço de controle de versão totalmente gerenciado que hospeda repositórios Git. Similar ao Git, é para código-fonte e não para armazenamento de sistemas operacionais ou arquivos de aplicação para execução em instâncias.
 ```
 
-```markdown
 ### Pergunta 20
 Uma empresa deseja empregar o AWS IQ para agilizar a entrega de um projeto na nuvem.
 De que maneira esse serviço pode ser utilizado para atender às necessidades da empresa e acelerar o processo de implementação do projeto?
@@ -456,7 +448,7 @@ Versionando e automatizando a implementação de infraestrutura na nuvem.
 * "Versionando e automatizando a implementação de infraestrutura na nuvem." Esta descrição está mais ligada a conceitos de Infrastructure as Code (IaC) e a serviços como AWS CloudFormation (para versionar a infraestrutura como código) e AWS CodePipeline (para automatizar a implantação).
 ```
 
-```markdown
+
 ### Pergunta 21
 Após concluir os testes, homologações e implantação de uma aplicação, usuários relataram a impossibilidade de acessá-la em ambiente de produção. Na log do CloudWatch, uma mensagem de erro indica que a função Lambda enfrentou negação de acesso ao DynamoDB.
 Qual serviço precisa ser configurado para resolver este problema em produção?
@@ -477,7 +469,7 @@ AWS Cognito
 * **AWS Cognito:** O Amazon Cognito é um serviço que ajuda a gerenciar identidades de usuários, autenticação e autorização para aplicações móveis e web. Ele lida com a autenticação de usuários finais para sua aplicação, não com a permissão de um serviço AWS (Lambda) para acessar outro serviço AWS (DynamoDB).
 ```
 
-```markdown
+
 ### Pergunta 22
 Quais dos seguintes planos de suporte oferecem acesso ao atendimento ao cliente, whitepapers, documentações e fóruns de suporte 24x7?
 (Selecione 2)
@@ -498,7 +490,7 @@ Reserved
 O plano Developer, embora ofereça mais do que o Basic, geralmente fornece suporte técnico por e-mail durante o horário comercial, não 24x7 para todos os problemas. "Reserved" é um modelo de precificação para instâncias EC2 (como On-Demand ou Spot), não um plano de suporte AWS.
 ```
 
-```markdown
+
 ### Pergunta 23
 Um banco precisa executar milhares de tarefas de computação em lote com eficiência.
 Qual é o serviço mais indicado para essa necessidade?
@@ -515,7 +507,7 @@ Qual é o serviço mais indicado para essa necessidade?
     * **Priorização e Dependências:** Você pode definir prioridades para os jobs e criar dependências entre eles, garantindo que as tarefas sejam executadas na ordem correta e que os recursos sejam alocados de forma otimizada.
 ```
 
-```markdown
+
 ### Pergunta 24
 Uma aplicação disponibiliza dados por meio de APIs REST para várias aplicações externas. Considerando possíveis cenários de manutenção e evolução futuras, qual serviço pode auxiliar na gestão de múltiplas versões de uma API, garantindo a compatibilidade contínua com todos os seus consumidores?
 AWS Zuul
@@ -539,7 +531,7 @@ API Gateway
 * **AWS EventBridge:** O Amazon EventBridge é um barramento de eventos serverless que facilita a conexão de suas aplicações usando dados de seus próprios aplicativos, softwares como serviço (SaaS) e serviços da AWS. Ele é excelente para arquiteturas baseadas em eventos, mas não é uma solução para expor e gerenciar APIs REST diretamente.
 ```
 
-```markdown
+
 ### Pergunta 25
 Uma agência de publicidade pretende lançar um site com conteúdo estático para realizar a primeira divulgação de um produto.
 Qual serviço seria mais apropriado e econômico para esse cenário?
@@ -565,7 +557,7 @@ Elastic Compute Cloud (EC2)
 * **Elastic Compute Cloud (EC2):** O EC2 fornece servidores virtuais (instâncias) na nuvem. Embora você *pudesse* hospedar um site estático em uma instância EC2, isso seria superdimensionado e muito mais caro do que o S3. Você pagaria pelo tempo de execução da instância 24/7, mesmo que o site tivesse pouco tráfego, e teria que gerenciar o sistema operacional e o servidor web.
 ```
 
-```markdown
+
 ### Pergunta 26
 Utilização de recursos de rede, computadores virtuais e armazenamento de dados com alto nível de flexibilidade, gerenciamento e controle sobre os recurso de TI são características de qual tipo de uso de cloud?
 SaaS
@@ -589,7 +581,7 @@ IaaS
 * **BaaS (Backend as a Service):** É um subconjunto de PaaS focado em serviços de backend para desenvolvimento de aplicações (especialmente móveis e web), como autenticação de usuário, bancos de dados, notificações push, etc. O controle é sobre as funcionalidades do backend, não sobre a infraestrutura subjacente.
 ```
 
-```markdown
+
 ### Pergunta 27
 Uma organização busca implementar uma estratégia de Recuperação de Desastres (DR) para suas aplicações.
 Qual é a recomendação mais adequada para a utilização do AWS RDS?
@@ -610,7 +602,7 @@ Implementar uma cópia do banco numa instância EC2
 * **Implementar uma cópia do banco numa instância EC2:** Embora seja tecnicamente possível configurar um banco de dados em uma instância EC2 e replicá-lo, isso desvirtua os benefícios de um serviço gerenciado como o RDS. Você seria responsável por todo o gerenciamento do banco de dados (patches, backups, replicação, escalabilidade, segurança), o que aumenta a complexidade operacional, o custo e o risco de erros em comparação com as soluções gerenciadas do RDS. Não é a recomendação mais adequada ou eficiente para um banco que busca DR.
 ```
 
-```markdown
+
 ### Pergunta 28
 Qual das seguintes opções oferece a descrição mais precisa e abrangente do conceito de tolerância a falhas?
 A habilidade de um sistema gravar as logs de execução.
@@ -630,7 +622,7 @@ A habilidade de um sistema permanecer em funcionamento mesmo se um dos seus comp
 * **A habilidade de um sistema crescer e provisionar novos recursos para continuar executando suas cargas de trabalho sem interrupção:** Esta é a definição de **escalabilidade (especialmente elasticidade)**. Embora a escalabilidade seja importante para lidar com o aumento da demanda e possa, indiretamente, contribuir para a disponibilidade (ao evitar sobrecarga), não é sinônimo de tolerância a falhas. A tolerância a falhas lida com falhas inesperadas de componentes, enquanto a escalabilidade lida com o crescimento da demanda.
 ```
 
-```markdown
+
 ### Pergunta 29
 Uma empresa deseja migrar suas licenças de software existentes para a AWS, mas o modelo de licenciamento exige que sejam vinculadas a hardware físico exclusivo, com controle sobre os núcleos físicos e conformidade com as regras do fornecedor.
 Qual estratégia a empresa deve adotar para atender a esse requisito?
@@ -658,7 +650,7 @@ Beta
 * **Utilizar instâncias reservadas combinadas com o AWS License Manager para economizar custos e garantir conformidade:** Instâncias Reservadas (RIs) oferecem descontos no preço em troca de um compromisso de uso, mas elas também podem ser executadas em hardware compartilhado (tenancy padrão), a menos que você as associe a Hosts Dedicados. Por si só, a RI não garante exclusividade de hardware físico.
 ```
 
-```markdown
+
 ### Pergunta 30
 Uma empresa tem o interesse de acompanhar o percentual de utilização de processamento e memória em seus servidores durante um período específico do dia.
 Qual serviço da AWS seria adequado para atender a essa necessidade?
@@ -683,7 +675,7 @@ AWS CloudWatch
 * **AWS DataSync:** O DataSync é um serviço de transferência de dados que facilita a movimentação de grandes quantidades de dados entre sistemas de armazenamento on-premises e serviços de armazenamento da AWS. Ele não tem função de monitoramento de desempenho de servidores.
 ```
 
-```markdown
+
 ### Pergunta 31
 Com base nos princípios de excelência operacional, segurança, confiabilidade, desempenho eficiente, sustentabilidade e otimização de custos, qual é o framework que auxilia os arquitetos de nuvem na construção de aplicações seguras, altamente eficientes, resilientes e otimizadas?
 Framework .Net
@@ -710,7 +702,7 @@ AWS Pillar
 * **AWS Pillar:** "Pillar" é um termo usado *dentro* do AWS Well-Architected Framework para descrever cada uma das suas áreas de foco (como os seis pilares mencionados acima). Não é um framework independente.
 ```
 
-```markdown
+
 ### Pergunta 32
 Quais dos seguintes itens fazem parte dos pilares do Well-Architected Framework?
 (Selecione 2 alternativas)
@@ -738,7 +730,7 @@ Desacoplamento
 * **Desacoplamento:** É um princípio de design de arquitetura que contribui para a **Confiabilidade** e a **Excelência Operacional**, mas não é um pilar direto do framework.
 ```
 
-```markdown
+
 ### Pergunta 33
 Qual dos seguintes serviços de bancos de dados oferecidos pela AWS proporciona, por padrão, gerenciamento completo, incluindo automação de tarefas como backup, aplicação de patches, monitoramento e escalabilidade, minimizando a intervenção administrativa do usuário?
 
@@ -756,7 +748,7 @@ Qual dos seguintes serviços de bancos de dados oferecidos pela AWS proporciona,
     * **Alta Disponibilidade:** Com as configurações Multi-AZ, o RDS e Aurora garantem redundância e failover automático.
 ```
 
-```markdown
+
 ### Pergunta 34
 Qual dos seguintes serviços de bancos de dados oferecidos pela AWS proporciona, por padrão, gerenciamento completo, incluindo automação de tarefas como backup, aplicação de patches, monitoramento e escalabilidade, minimizando a intervenção administrativa do usuário?
 MySql
@@ -787,7 +779,7 @@ SQL Server
     O DynamoDB vai um passo além, sendo verdadeiramente *serverless* e abstrato da infraestrutura subjacente, o que minimiza ainda mais a intervenção administrativa do usuário, tornando-o a opção que proporciona "gerenciamento completo" por padrão, sem quase nenhuma intervenção operacional.
 ```
 
-```markdown
+
 ### Pergunta 35
 O que é o AWS Free Tier (Nível Gratuito) e quais são as suas categorias de serviços disponíveis?
 É um modelo de uso onde você não é cobrado na AWS. Suas categorias são 12 meses de gratuidade, sempre gratuito e spot.
@@ -806,7 +798,7 @@ As três categorias principais do AWS Free Tier são:
 É importante monitorar seu uso para evitar custos inesperados, pois o uso que excede os limites do Free Tier será cobrado pelas taxas padrão da AWS.
 ```
 
-```markdown
+
 ### Pergunta 36
 Uma empresa tem a intenção de desenvolver uma aplicação sem servidor, fazendo uso de Lambda, SQS e SNS. Nesse contexto, é necessário escolher um serviço que possa orquestrar e integrar esses recursos para criar fluxos de negócio.
 Qual serviço seria mais adequado para essa finalidade?
@@ -832,7 +824,7 @@ AWS Step Functions
 * **AWS Workflow:** Não existe um serviço da AWS especificamente chamado "AWS Workflow" no contexto de orquestração de microsserviços. O Step Functions é o principal serviço de orquestração de fluxos de trabalho.
 ```
 
-```markdown
+
 ### Pergunta 37
 O desenvolvedor de uma empresa implementou um sistema baseado em arquitetura de microsserviços e necessita realizar a depuração de cada um desses microsserviços a partir de uma requisição do usuário, visando compreender a performance e identificar possíveis oportunidades de aprimoramento.
 Qual serviço é mais apropriado para essa finalidade, tanto em ambientes de desenvolvimento quanto em ambientes de produção?
@@ -858,7 +850,7 @@ AWS X-Ray
 * **AWS CloudWatch:** O Amazon CloudWatch é um serviço de monitoramento e observabilidade que coleta métricas e logs de recursos AWS. Ele é fundamental para monitorar a saúde geral dos seus microsserviços, mas não oferece o nível de rastreamento distribuído por requisição que o X-Ray fornece para depuração detalhada em arquiteturas complexas. O X-Ray complementa o CloudWatch para observabilidade mais profunda.
 ```
 
-```markdown
+
 ### Pergunta 38
 Qual é o serviço da AWS que permite que aplicações acessem de forma segura e controlada recursos restritos de outros serviços dentro da AWS, utilizando políticas de permissões granulares e autenticação robusta?
 IAM Users (usuários)
@@ -882,7 +874,7 @@ IAM policies (políticas)
 * **IAM policies (políticas):** As políticas IAM são os *documentos JSON* que definem as permissões (o que pode ser feito e em quais recursos). Elas são componentes cruciais do IAM, mas não são o mecanismo pelo qual as aplicações assumem essas permissões. As políticas são anexadas a usuários, grupos ou, no nosso caso, a *Roles*.
 ```
 
-```markdown
+
 ### Pergunta 39
 Uma startup SaaS que utiliza diversos serviços da AWS está crescendo rapidamente e enfrenta desafios técnicos e operacionais. A gerente de engenharia precisa avaliar os planos de suporte disponíveis.
 Quais são os cinco tipos de suporte ofertados pela AWS?
@@ -903,7 +895,7 @@ Bronze, Silver, Gold, Diamond, Ruby
     * **Enterprise Support:** O plano mais abrangente, para clientes com *cargas de trabalho críticas de missão* e ambientes complexos. Inclui um *Technical Account Manager (TAM) dedicado*, revisões proativas, suporte de resolução de problemas 24x7 por telefone, chat e e-mail, e um tempo de resposta mais rápido para casos críticos.
 ```
 
-```markdown
+
 ### Pergunta 40
 Qual é o serviço de alta performance desenvolvido para fornecer block-storage para instâncias EC2?
 Amazon Elastic Block Storage (EBS)
@@ -927,7 +919,7 @@ Elastic Load Balancing (ELB)
 * **Elastic Load Balancing (ELB):** ELB distribui automaticamente o tráfego de entrada entre várias instâncias EC2. É um serviço de rede para alta disponibilidade e escalabilidade, não um serviço de armazenamento.
 ```
 
-```markdown
+
 ### Pergunta 41
 Um desenvolvedor precisa modificar determinadas partes do código de uma aplicação, mas no momento, não possui acesso ao seu computador e nem à sua IDE preferida.
 Como esse cenário pode ser contornado utilizando os serviços da AWS, permitindo que ele edite, compile e implemente o código remotamente de maneira eficiente?
@@ -953,7 +945,7 @@ Utilizando o CodeBuild através de um navegador de internet
 * **Utilizando o CodeBuild através de um navegador de internet:** O AWS CodeBuild é um serviço de integração contínua totalmente gerenciado que compila o código-fonte, executa testes e produz pacotes de software. Assim como o CodePipeline, ele faz parte do pipeline de CI/CD, mas não é uma IDE para codificação e edição manual.
 ```
 
-```markdown
+
 ### Pergunta 42
 Qual é a opção de armazenamento padrão (default) do serviço S3?
 Standard
@@ -973,7 +965,7 @@ Infrequent Access
     Embora o S3 ofereça várias outras classes de armazenamento (como Glacier, Frequent Access, Infrequent Access, Intelligent-Tiering, etc.) para otimização de custo com base em padrões de acesso, o **Standard** é o ponto de partida e a escolha padrão por ser a mais versátil e adequada para a maioria dos casos de uso de acesso frequente.
 ```
 
-```markdown
+
 ### Pergunta 43
 Uma startup está em busca de um serviço capaz de identificar os sentimentos expressos em textos digitados durante conversas entre clientes e atendentes em um chat de um e-commerce.
 Qual serviço da AWS pode ser utilizado para analisar esses textos e determinar os sentimentos expressos, ajudando a melhorar a experiência do cliente e a eficiência do atendimento?
@@ -999,7 +991,7 @@ Amazon Kendra
 * **Amazon Kendra:** É um serviço de pesquisa inteligente que usa aprendizado de máquina para indexar e pesquisar informações em repositórios de dados heterogêneos. Ele ajuda os usuários a encontrar respostas específicas para suas perguntas, mas não é projetado para análise de sentimento em conversas em tempo real.
 ```
 
-```markdown
+
 ### Pergunta 44
 Uma agência está buscando incorporar ao seu site uma funcionalidade que permita realizar pesquisas em todas as páginas e arquivos, visando aprimorar a navegação e a experiência dos usuários.
 Qual serviço SaaS disponível na AWS oferece ferramentas robustas para atender a esse propósito e pode ser facilmente integrado à sua aplicação?
@@ -1025,7 +1017,6 @@ Amazon CloudSearch
 * **Amazon CloudWatch:** O Amazon CloudWatch é um serviço de monitoramento e observabilidade que coleta métricas e logs. Ele é essencial para monitorar a saúde de aplicações, mas não fornece uma funcionalidade de pesquisa para o conteúdo de um site.
 ```
 
-```markdown
 ### Pergunta 45
 Qual é o serviço serverless (sem servidor) da AWS que permite a execução de consultas utilizando o padrão SQL para analisar e processar grandes volumes de dados armazenados no Amazon S3, oferecendo escalabilidade automática e integração com outras ferramentas de análise de dados?
 Amazon Query Analyzer
@@ -1050,7 +1041,7 @@ Amazon Elastic Search
 * **Amazon Elastic Search:** O serviço correto é **Amazon OpenSearch Service** (sucessor do Amazon Elasticsearch Service). Ele é um serviço gerenciado para implantar, operar e dimensionar clusters OpenSearch para pesquisa, análise de logs e monitoramento de aplicações. Embora lide com grandes volumes de dados, seu foco principal é pesquisa e análise de logs, não consultas SQL diretas sobre dados em S3 para análise de dados brutos.
 ```
 
-```markdown
+
 ### Pergunta 46
 Uma empresa pretende manter suas cargas de trabalho no ambiente on-premises e armazenar parte de seus arquivos na AWS, adotando uma arquitetura de nuvem híbrida.
 Qual serviço proporciona uma variedade de recursos para a implementação dessa integração de armazenamento?
@@ -1078,7 +1069,7 @@ AWS Storage Gateway
 * **AWS Database Migration Service (DMS):** O DMS é um serviço que ajuda a migrar bancos de dados para a AWS de forma rápida e segura. Ele é focado em bancos de dados, não em armazenamento de arquivos ou objetos para uma estratégia híbrida geral.
 ```
 
-```markdown
+
 ### Pergunta 47
 Em relação ao framework de melhores práticas arquitetônicas da AWS, qual pilar se dedica a assegurar que uma carga de trabalho execute sua função prevista de forma correta e consistente, e que essa carga de trabalho seja resiliente, recuperando-se prontamente de falhas para atender às demandas do negócio e do cliente?
 Excelência Operacional
@@ -1097,7 +1088,7 @@ Segurança
     * **Dimensionamento:** Assegura que a carga de trabalho pode escalar (crescer e diminuir) para atender às demandas variáveis, evitando sobrecargas que levariam a falhas de desempenho.
 ```
 
-```markdown
+
 ### Pergunta 48
 Um E-Commerce precisa armazenar catálogos de produtos, onde cada item possui diferentes atributos, como descrição, preço, imagens e avaliações de clientes.
 Qual serviço de banco de dados é o mais adequado para essa finalidade?
@@ -1122,7 +1113,7 @@ Amazon DynamoDB
 * **Amazon Aurora:** É um banco de dados relacional (compatível com MySQL e PostgreSQL) totalmente gerenciado. Embora seja de alto desempenho e escalável, o modelo relacional pode ser menos flexível para catálogos com esquemas variados e complexos, exigindo mais engenharia para lidar com a diversidade de atributos de produto em comparação com um banco NoSQL como o DynamoDB.
 ```
 
-```markdown
+
 ### Pergunta 49
 Uma empresa deseja lançar um novo produto e precisa criar um novo domínio público para associá-lo ao seu novo site. Considerando a necessidade de rapidez e eficiência no processo de registro e configuração do domínio, qual é a maneira mais rápida e eficaz de realizar essa tarefa utilizando os serviços da AWS?
 Criar um novo domínio no Amazon Route 53.
@@ -1146,7 +1137,7 @@ Criar um novo domínio no Registro.br
 * **Criar um novo domínio no Registro.br:** O Registro.br é o registrador de domínios para `.br` no Brasil. Embora seja uma forma válida de registrar um domínio, se o site será hospedado na AWS, registrar diretamente no Route 53 pode ser mais rápido e eficaz por integrar o registro e a configuração do DNS na mesma plataforma, simplificando a gestão e a conectividade com outros serviços AWS. Para domínios que não sejam `.br` (como `.com`, `.org`), o Route 53 é um registrador global.
 ```
 
-```markdown
+
 ### Pergunta 50
 Uma agência de viagens online tem a necessidade de armazenar, analisar e correlacionar dados de logs de seus aplicativos. Isso é essencial para identificar e resolver gargalos de desempenho, bem como lidar com problemas de disponibilidade, a fim de garantir uma experiência de reserva otimizada para seus clientes.
 Qual serviço da AWS é mais indicado para atender a essa demanda?
@@ -1172,7 +1163,7 @@ Amazon EMR
 * **Amazon EMR (Elastic MapReduce):** É uma plataforma de big data para processamento e análise de grandes volumes de dados usando frameworks como Apache Spark e Hadoop. Embora possa processar logs, é mais voltado para cargas de trabalho de processamento em lote e análises complexas, e não é a ferramenta de primeira linha para análise de logs em tempo real e observabilidade operacional como o OpenSearch.
 ```
 
-```markdown
+
 ### Pergunta 51
 Qual é a quantidade máxima de dados que pode ser armazenada no Amazon S3?
 5 TB
@@ -1190,7 +1181,7 @@ A capacidade é virtualmente ilimitada
     * **Upload em uma Única Requisição:** O maior objeto que pode ser carregado em uma única operação PUT é de 5 GB. Para objetos maiores, a AWS recomenda o uso do upload multipartado.
 ```
 
-```markdown
+
 ### Pergunta 52
 Como é possível manter a exposição constante de serviços em um mesmo endereço IP e facilitar a substituição simples dos hosts associados a esse endereço em sua infraestrutura?
 Utilizando um IP Elástico
@@ -1213,7 +1204,7 @@ Utilizando HTTPS
 * **Utilizando HTTPS:** HTTPS é um protocolo de comunicação seguro para a web. Ele garante a criptografia e a autenticidade dos dados em trânsito. Não tem relação direta com a forma como um endereço IP é mantido constante ou remapeado para diferentes hosts.
 ```
 
-```markdown
+
 ### Pergunta 53
 Um equipe de desenvolvimento lançou o piloto de uma aplicação. Para obter a aprovação do rollout, o CTO solicitou uma análise dos custos de infraestrutura na AWS durante o período deste piloto.
 Qual é o serviço que fornece essas informações?
@@ -1238,7 +1229,7 @@ AWS Inspector
 * **AWS Inspector:** O Amazon Inspector é um serviço de avaliação de segurança automatizado que ajuda a melhorar a segurança e a conformidade de aplicações. Ele identifica vulnerabilidades e desvios de melhores práticas de segurança, mas **não fornece informações sobre custos**.
 ```
 
-```markdown
+
 ### Pergunta 54
 Uma empresa de e-commerce enfrenta picos de tráfego durante promoções e precisa ajustar sua infraestrutura para garantir alta disponibilidade e bom desempenho, mesmo em momentos de alta demanda.
 Qual princípio de design de arquitetura é mais adequado para atender a essa necessidade?
@@ -1263,7 +1254,7 @@ Projetar para falhas e implementar recuperação automática.
 * **Projetar para falhas e implementar recuperação automática:** Este é um princípio crucial da **Confiabilidade**. Ele garante que o sistema se recupere de interrupções, mas não se concentra primariamente em como a infraestrutura se adapta a *picos de demanda* para manter o desempenho. Embora a escalabilidade horizontal contribua para a resiliência a falhas, o foco principal da pergunta é o ajuste para alta demanda.
 ```
 
-```markdown
+
 ### Pergunta 55
 Uma empresa busca aprimorar a eficiência dos custos ao utilizar o serviço S3. Neste contexto identificou a presença de numerosos registros armazenados que poderiam ser removidos após decorridos 30 dias desde sua criação.
 Como seria possível otimizar essa situação?
@@ -1287,7 +1278,7 @@ Configurando o S3 Lifecycle (Ciclo de Vida) para que os objetos expirem em 30 di
 * **Criando uma cópia destes objetos em outra região:** A replicação de objetos para outra região (Replicação Cross-Region) aumenta a resiliência e a proximidade para usuários em diferentes geografias, mas também **não reduz custos** nem exclui os arquivos automaticamente após um período. Assim como a cópia em outra AZ, ela adiciona custo de armazenamento e transferência de dados.
 ```
 
-```markdown
+
 ### Pergunta 56
 Qual das seguintes opções é um princípio essencial do AWS Cloud Adoption Framework (AWS CAF) relacionado à perspectiva de governança?
 Gerenciamento de desempenho e capacidade.
@@ -1310,7 +1301,7 @@ Provisionamento de identidades e controle de acesso.
 * **Provisionamento de identidades e controle de acesso:** Embora fundamental para a segurança e controle, é um princípio central da perspectiva de **Segurança** no AWS CAF. A governança *utiliza* o controle de acesso para aplicar políticas, mas o controle de acesso em si é da segurança.
 ```
 
-```markdown
+
 ### Pergunta 57
 Como o AWS Compute Optimizer emprega informações específicas para identificar configurações ideais de recursos na infraestrutura da AWS?
 Utilizando Machine learning.
@@ -1337,7 +1328,7 @@ Utilizando APIs de processamento de linguagem natural (NLP).
 * **Utilizando APIs de processamento de linguagem natural (NLP):** NLP é um ramo da IA que lida com a interação entre computadores e linguagem humana. APIs de NLP (como Amazon Comprehend) são usadas para entender texto, traduzir, etc., e não são relevantes para a análise de métricas de infraestrutura de computação.
 ```
 
-```markdown
+
 ### Pergunta 58
 Qual das seguintes afirmações NÃO está relacionada ao AWS Lambda?
 Pode ser acionado diretamente pelo AWS S3.
@@ -1358,7 +1349,7 @@ Permite o gerenciamento total dos recursos de infraestrutura.
 * **Permite o gerenciamento total dos recursos de infraestrutura:** **Falso.** Justamente por ser um serviço serverless, o Lambda **abstrai o gerenciamento da infraestrutura** do usuário. A AWS cuida de todo o provisionamento, escalabilidade, aplicação de patches e manutenção dos servidores subjacentes. Você não tem gerenciamento "total" desses recursos; a AWS faz isso por você.
 ```
 
-```markdown
+
 ### Pergunta 59
 Uma equipe limitada em infraestrutura está interessada em adotar uma arquitetura de microsserviços em containers sem servidor.
 Qual serviço poderia ajudá-los, uma vez que não exige conhecimento especializado em containers e pode ser implementado com facilidade?
@@ -1383,7 +1374,7 @@ Amazon Elastic Kubernetes Service (EKS)
 * **Amazon Elastic Kubernetes Service (EKS):** O EKS é um serviço gerenciado de Kubernetes na AWS. Embora o Kubernetes seja uma poderosa plataforma de orquestração de contêineres, ele exige um conhecimento especializado significativo para configurar e gerenciar, mesmo em uma versão gerenciada como o EKS (onde você ainda gerencia os nós de trabalho por padrão, a menos que o use com o Fargate). Portanto, não é ideal para uma equipe com conhecimento limitado.
 ```
 
-```markdown
+
 ### Pergunta 60
 Uma empresa precisa auditar sua infraestrutura na AWS para identificar ações manuais e não planejadas de desligamento de recursos.
 Qual serviço pode ser útil para auxiliar nessa atividade?
@@ -1408,7 +1399,7 @@ AWS CloudTrail
 * **AWS Audit:** Não existe um serviço da AWS com o nome "AWS Audit". O conceito de auditoria na AWS é geralmente implementado usando o CloudTrail em conjunto com outros serviços de monitoramento e segurança.
 ```
 
-```markdown
+
 ### Pergunta 61
 Chief Technology Officer (CTO) de uma rede hospitalar almeja incorporar o AWS Data Exchange em suas plataformas.
 Para que finalidade esse serviço pode ser utilizado nesse contexto?
@@ -1433,7 +1424,7 @@ Para integrar as redes computacionais dos hospitais.
 * **Para integrar as redes computacionais dos hospitais:** Serviços como AWS Direct Connect, AWS Site-to-Site VPN, ou Amazon VPC seriam usados para integrar redes on-premises com a nuvem AWS. O Data Exchange foca na troca de *dados*, não na conectividade de rede subjacente.
 ```
 
-```markdown
+
 ### Pergunta 62
 A equipe de Arquitetura de Soluções de uma empresa recomendou o uso do AWS Wavelength para melhorar o desempenho de suas aplicações.
 Qual é a melhor definição para o AWS Wavelength, considerando seu papel para os serviços de computação e armazenamento da AWS?
@@ -1457,7 +1448,7 @@ Um serviço de monitoramento do uso e performance de serviços de computação e
 * **Um serviço de monitoramento do uso e performance de serviços de computação e armazenamento:** Isso se encaixa no Amazon CloudWatch, que coleta métricas e logs.
 ```
 
-```markdown
+
 ### Pergunta 63
 Quais são as principais funcionalidades do Amazon QuickSight?
 Capturar dados de diversos dispositivos através de streaming de dados de forma quase online.
@@ -1483,7 +1474,7 @@ Criar DashBoards de BI com uso de Aprendizado de Máquina (Machine Learning)
 * **Realizar consultas em objetos armazenados no S3:** Embora o QuickSight possa se conectar a dados no S3, o serviço da AWS focado em **executar consultas SQL diretamente em objetos armazenados no S3** é o **Amazon Athena**.
 ```
 
-```markdown
+
 ### Pergunta 64
 Uma empresa deu início a um processo de transformação digital em todas as suas plataformas e optou por empregar uma arquitetura de sistemas orientada a eventos.
 Qual dos serviços a seguir pode ser utilizado como um barramento escalável de eventos para facilitar a implementação dessa arquitetura?
@@ -1510,4 +1501,4 @@ Amazon Lambda
 * **Amazon SQS (Simple Queue Service):** O SQS é um serviço de filas de mensagens. Ele é excelente para desacoplar componentes e para comunicação assíncrona entre serviços, mas é uma fila *ponto a ponto* (ou para um grupo de consumidores que leem da mesma fila), não um *barramento de eventos* com recursos de roteamento e múltiplas fontes/destinos como o EventBridge.
 * **Amazon EventSync:** Não existe um serviço da AWS com esse nome.
 * **Amazon Lambda:** AWS Lambda é um serviço de computação serverless que executa seu código em resposta a eventos. Ele é um *destino comum* para eventos do EventBridge (ou SQS, SNS), mas não é o barramento de eventos em si.
-```
+
